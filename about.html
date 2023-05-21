@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Medonik</title>
+	<link rel="icon" href="images/medonik-bw-logo-square.png" type="image/png">
+	<link rel="stylesheet" href="aboutstyles.css">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+	<style>
+		.product-links a {
+			font-family: "Your Font Name", sans-serif;
+			/* Add any other font properties as needed */
+		}
+	</style>
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="home.html" draggable="false"><img src="images/medonik-logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<a href="#" class="bi bi-x-lg" onclick="return hideMenu()"></a>
+				<ul>
+					<li><a href="home.html" >Home</a></li>
+					<li  class="selected"><a href="about.html">About</a></li>
+					<li><a href="contact_us.html">Contact us</a></li>
+					<li><a href="https://medonik-qc.myshopify.com/">Shop</a></li>
+				</ul>
+			</div>
+			<i class="bi bi-list" onclick="showMenu()"></i>
+		</nav>
+
+		<div class='text-box'>
+			<h1>What about us?</h1>
+			<h2></h2>
+		</div>
+    </section>
+
+
+    <!------Our purpose------->
+
+    <section class="purpose" id="purpose">
+        <h1>Our purpose</h1>
+        
+        <div class="description">
+            <img class="purpose_img" src="images/resort_about.png">
+            <div class="text">
+                <p>As travellers, nothing infuriates us more than getting sick and ruining a wonderful trip.  In order to prevent such events, our options are limited. In fact, medication is the only real solution when it comes to facing symptoms. With this in mind, we have created a way for every adventurer to equip themselves properly according to their destination. A personalized medicine kit built for YOUR needs will certainly help to make sure ur trip goes according to plan</p>
+            </div>
+        </div>
+		<hr>
+        <h2>Changes of plan are inevitable when it comes to traveling.<br> The question is: are you prepared to face it?</h2>
+		<hr>
+	</section>
+
+
+
+    <!------The essentials------->
+
+    <section class="essentials" id="essentials">
+		<hr>
+			<h1>The essentials</h1>
+			<h2>Here is a list of basic needs that is included in every order (portions may vary)</h2>
+			<li>Acetaminophen</li>
+			<li>Ibuprofen</li>
+			<li>Antacid</li>
+			<li>Antihistamine</li>
+			<li>Imodium</li>
+			<li>Melatonin</li>
+			<li>Powder for rehydration solution</li>
+			<li>Hydrocortisone cream</li>
+			<li>Antibiotic ointment</li>
+			
+    </section>
+
+
+
+
+    <!--------JavaScript for Toggle menu---------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+        navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+        navLinks.style.right = "-200px";
+        return false;
+        }
+
+
+
+    </script>
+
+    </body>
+    </html>

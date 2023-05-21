@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Medonik</title>
+	<link rel="icon" href="images/medonik-bw-logo-square.png" type="image/png">
+	<link rel="stylesheet" href="homestyles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+	<style>
+		.product-links a {
+			font-family: "Your Font Name", sans-serif;
+			/* Add any other font properties as needed */
+		}
+	</style>
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="home.html" draggable="false"><img src="images/medonik-logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<a href="#" class="bi bi-x-lg" onclick="return hideMenu()"></a>
+				<ul>
+					<li  class="selected"><a href="home.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact_us.html">Contact us</a></li>
+					<li><a href="https://medonik-qc.myshopify.com/">Shop</a></li>
+				</ul>
+			</div>
+			<i class="bi bi-list" onclick="showMenu()"></i>
+		</nav>
+
+		<div class='text-box'>
+			<h1>Medonik</h1>
+			<h2>Peace of mind, you deserve it</h2>
+		</div>
+	</section>
+
+	<!-------- Products ------->
+	<section class="products">
+		<h1>Products We Offer</h1>
+		<h2>A personalized medicine kit adapted for YOUR destination</h2>
+		<div class="row">
+			<div>
+				<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-small-1" draggable="false">
+					<img class="product-image" src="images/trouse-small.png">
+				</a>
+				<div class="indi-description">
+					<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-small-1" draggable="false" class="product-title">
+						<h3>Small Travellers Kit</h3>
+					</a>
+				</div>
+				<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-small-1" class="hero-btn">
+					<i class="bi bi-cart"></i> Add to cart
+				</a>
+			</div>
+	
+			<div>
+				<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-medium" draggable="false">
+					<img class="product-image" src="images/trouse-medium.png">
+				</a>
+				<div class="indi-description">
+					<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-medium" draggable="false">
+						<h3 class="product-title">Medium Travellers Kit</h3>
+					</a>
+				</div>
+				<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-medium" class="hero-btn">
+					<i class="bi bi-cart"></i> Add to cart
+				</a>
+			</div>
+	
+			<div>
+				<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-large" draggable="false">
+					<a href="index.html"><img class="product-image" src="images/trouse-large.png">
+				</a>
+				<div class="indi-description">
+					<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-large" draggable="false">
+						<h3 class="product-title">Large Travellers Kit</h3>
+					</a>
+				</div>
+				<a href="https://medonik-qc.myshopify.com/products/travellers-medicine-kit-large" class="hero-btn">
+					<i class="bi bi-cart"></i> Add to cart
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-------Images-------->
+
+	<section class="section3">
+		<div class="text-box2">
+		  <h1>Prevent any eventualities</h1>
+		  <a id="shopButton" class="hidden" href="https://medonik-qc.myshopify.com">Shop now</a>
+		</div>
+	</section>
+	  
+
+		<!---------Map------->
+
+		<section class="map">
+		
+			<head>
+				<h1>Find the medicine that suits your trip!</h1>
+				
+
+				<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+			
+				<style>
+					#map {
+						height: 60vh;
+						width: 100%;
+						margin: auto;
+						border-top: 10px solid #39bfb4;
+						border-bottom: 10px solid #39bfb4;
+					}
+				</style>
+	
+			</head>
+			<body>
+	
+				<div id="map"></div>
+				
+				<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+				<script src="main.js"></script>
+			</body>
+			</html>
+	
+			
+	
+		</section>
+	
+	
+
+	<!-------Section 4------>
+
+	<section class="logos">
+		<img class="logos_img"src="images/medonik-bw-logo.png">
+		<ul>
+		  <li>
+			<i class="bi bi-stopwatch"></i>
+			<p>Fast delivery</p>
+		  </li>
+		  <li>
+			<i class="bi bi-capsule"></i>
+			<p>Everything you need</p>
+		  </li>
+		  <li>
+			<i class="bi bi-briefcase"></i>
+			<p>Bag included</p>
+		  </li>
+		  <li>
+			<i class="bi bi-airplane"></i>
+			<p>World wide shipping</p>
+		  </li>
+		</ul>
+		
+	  </section>
+	  
+	  
+
+<!--------JavaScript for Toggle menu---------->
+<script>
+
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu() {
+	navLinks.style.right = "0";
+	}
+
+	function hideMenu() {
+	navLinks.style.right = "-200px";
+	return false;
+	}
+
+
+
+</script>
+
+</body>
+</html>
+
+<!--------javascript for button animation-------->
+<script>
+// Function to check if the button is in the viewport
+function isButtonVisible() {
+  var button = document.getElementById("shopButton");
+  var buttonRect = button.getBoundingClientRect();
+  return buttonRect.top < window.innerHeight;
+}
+
+// Function to handle scroll event and add/remove classes accordingly
+function handleScroll() {
+  var button = document.getElementById("shopButton");
+
+  if (isButtonVisible()) {
+    button.classList.add("visible");
+    button.classList.add("pop-animation");
+  } else {
+    button.classList.remove("visible");
+    button.classList.remove("pop-animation");
+  }
+}
+
+// Add event listener to the scroll event
+window.addEventListener("scroll", handleScroll);
+</script>
