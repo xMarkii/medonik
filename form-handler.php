@@ -5,7 +5,7 @@ $residing_country = $_POST['residing country'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'medonik.officiel@gmail.com';
+$email_from = 'info@medonik.ca';
 
 $email_subject = 'New Form Submission';
 
