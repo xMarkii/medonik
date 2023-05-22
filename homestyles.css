@@ -269,6 +269,8 @@ nav .bi{
   
 /*----------Map-----------*/
 
+
+
 .map h1{
 	width: 80%;
 	margin: auto;
@@ -276,6 +278,17 @@ nav .bi{
 	padding-top: 200px;
 	padding-bottom: 200px;
 	font-size: 48px;
+}
+
+.map h2{
+	text-align: center;
+	font-size: 36px;
+	padding-bottom: 30px;
+}
+
+.map a{
+	color: #2ea9da;
+	text-decoration: underline;
 }
 
 /*-------Logos-------*/
@@ -331,6 +344,52 @@ nav .bi{
   
 
 
+  /*--------bottom-page-----------*/
+
+  footer a,footer p{
+	text-decoration: none;
+	color: #ffffff
+  }
+
+  footer{
+	background: #39bfb4;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 30px;;
+  }
+
+  footer li{
+	list-style: none;
+	display: inline-block;
+	margin: 10px;
+  }
+
+  footer ul li::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: #ffffff;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+footer ul li.selected::after {
+	width: 100%;
+  }
   
+  footer ul li:hover::after {
+	width: 100%;
+  }
+  
+  footer ul li::after {
+	width: 0%;
+  }
+  
+  .footer ul li:hover::after,
+  .footer ul li.selected:hover::after {
+	width: 100%;
+  }
   
   
