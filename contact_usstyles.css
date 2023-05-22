@@ -174,7 +174,7 @@ nav .bi{
     margin-right: 30px;
   }
   
-  p {
+  .contact-us p {
     padding: 0;
     font-weight: 400;
   }
@@ -216,4 +216,51 @@ nav .bi{
     flex-wrap: wrap;
 }
   
+ /*--------bottom-page-----------*/
+
+ a, footer p{
+	text-decoration: none;
+	color: #ffffff
+  }
+
+  footer{
+	background: #39bfb4;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 30px;;
+  }
+
+  footer li{
+	list-style: none;
+	display: inline-block;
+	margin: 10px;
+  }
+
+  footer ul li::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: #ffffff;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+footer ul li.selected::after {
+	width: 100%;
+  }
+  
+  footer ul li:hover::after {
+	width: 100%;
+  }
+  
+  footer ul li::after {
+	width: 0%;
+  }
+  
+  .footer ul li:hover::after,
+  .footer ul li.selected:hover::after {
+	width: 100%;
+  }
   
