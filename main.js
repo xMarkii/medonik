@@ -35,7 +35,7 @@ const markerData = [
   { name: 'Netherlands <br><a href="about.html#essentials">Basic medicine</a>', coordinates: [52.30, 5.45] },
   { name: 'Poland <br><a href="about.html#essentials">Basic medicine</a>', coordinates: [52, 20] },
   { name: 'Portugal <br><a href="about.html#essentials">Basic medicine</a>', coordinates: [39.30, -8] },
-  { name: 'Russia <br><a href="about.html#essentials">Basic medicine</a>', coordinates: [60, 100] },
+  { name: 'Russia <li><a href="about.html#essentials">Basic medicine</a></li> <li>Don\'t go there!</li>', coordinates: [60, 100] },
   { name: 'Spain <br><a href="about.html#essentials">Basic medicine</a>', coordinates: [40, -4] },
   { name: 'Thailand <br><a href="about.html#essentials">Basic medicine</a>', coordinates: [15, 100] },
   { name: 'Turkey <br><a href="about.html#essentials">Basic medicine</a>', coordinates: [39, 35] },
@@ -95,3 +95,4 @@ duplicateMarkers();
 // Event handlers for map movement and zooming
 map.on('moveend', duplicateMarkers);
 map.on('zoomend', duplicateMarkers);
+
